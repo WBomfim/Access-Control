@@ -1,5 +1,9 @@
 package com.trybe.acc.java.controledeacesso;
 
+/**
+ * Calsse Principal.
+ *
+ */
 public class Principal {
 
   /**
