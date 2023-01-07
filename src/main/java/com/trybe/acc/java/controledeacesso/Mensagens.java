@@ -23,7 +23,7 @@ public class Mensagens {
    * Métofdo liberacao.
    * 
    */
-  public static void liberacao(short idade) {
+  public static void liberacao(int idade) {
     if (idade < 18) {
       System.out.println("Pessoa cliente menor de idade, catraca liberada!");
     }
@@ -46,21 +46,27 @@ public class Mensagens {
     System.out.println("menores: " + menores);
     System.out.println("adultas: " + adultos);
     System.out.println("a partir de 50: " + idosos);
+    System.out.println();
   }
 
   /**
    * Método relatorioPercentual.
    * 
    */
-  public static void relatorioPercentual(int menores, int adultos, int idosos) {
+  public static void relatorioPercentual(String menores, String adultos, String idosos) {
     System.out.println("----- Percentual -----");
-    System.out.println("menores: " + menores);
-    System.out.println("adultas: " + adultos);
-    System.out.println("a partir de 50: " + idosos);
+    System.out.println("menores: " + menores + "%");
+    System.out.println("adultas: " + adultos + "%");
+    System.out.println("a partir de 50: " + idosos + "%");
+    System.out.println();
   }
 
   public static void totalPessoas(int total) {
     System.out.println("TOTAL: " + total);
+  }
+  
+  public static void imprime(String mensagem) {
+    System.out.println(mensagem);
   }
 
 }
